@@ -1,0 +1,21 @@
+.navbar-app {
+    padding-inline: var(--gap);
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--navbar-app-bg-color);
+    font-size: 1.5rem;
+}
+
+.btn-account{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    font-size: 12px;
+    background-color: aqua;
+    color: white;
+    font-weight: bold;
+}

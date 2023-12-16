@@ -1,0 +1,130 @@
+.column {
+    flex: 0 0 auto;
+    width: 300px;
+    height: calc(100vh - 40px - 50px - var(--gap));
+    margin-left: var(--gap);
+}
+
+.column>* {
+    background-color: var(--list-bg-color);
+    color: #333;
+    padding: 5px 8px;
+}
+
+header {
+    position: relative;
+    height: var(--column-header-height);
+    font-size: 16px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.column-drag-handle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-right: 3px;
+    padding-top: 5px;
+}
+
+.column-title {
+    width: 85%;
+}
+
+.column-dorpdown {
+    width: 10%;
+}
+
+.dropdown-toggle {
+    padding: 0 6px;
+    height: 32px;
+    width: 32px;
+}
+
+.column-dorpdown .dropdown-toggle::after {
+    content: '...';
+    position: absolute;
+    top: -20%;
+    right: 25%;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 20px;
+}
+
+.column-dorpdown .dropdown-toggle:hover {
+    background-color: #091e4214;
+}
+
+.column-dorpdown .dropdown-toggle:focus {
+    background-color: #091e4214;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+footer {
+    padding-left: 10px;
+    height: var(--column-footer-height);
+    border-bottom-left-radius: var(--column-border-radius);
+    border-bottom-right-radius: var(--column-border-radius);
+
+}
+
+.footer-action {
+    color: #888;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.footer-action:hover {
+    color: #333;
+}
+
+.task-list {
+    list-style-type: none;
+    margin: 0;
+    max-height: calc(100% - var(--column-header-height) - var(--column-footer-height));
+    overflow-y: auto;
+}
+
+.task-list::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.task-list::-webkit-scrollbar-track {
+    background-color: white;
+    /* box-shadow: inset 0 0 5px #fff; */
+    border-radius: 5px;
+}
+
+.task-list::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+    background-color: #dfdfdf;
+    border-radius: 5px;
+    /* border-right: 5px solid #fff; */
+}
+
+.task-ghost {
+    transition: transform 0.18s ease;
+    transform: rotateZ(5deg);
+    background-color: rgba(255, 255, 255, 0.641);
+    color: #000000af;
+    font-style: italic;
+}
+
+.task-ghost-drop {
+    transition: transform 0.18s ease-in-out;
+    transform: rotateZ(0deg);
+}
+
+.task-drop-preview {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px dashed rgba(188, 188, 188, 0.458);
+    margin: 0;
+}

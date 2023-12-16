@@ -1,0 +1,16 @@
+.task-item {
+    background-color: white;
+    padding: var(--gap);
+    border-radius: var(--task-border-radius);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    margin-bottom: var(--gap);
+}
+
+.task-cover {
+    display: block;
+    width: calc(100% + 2 * var(--gap));
+    margin: -10px 0 10px -10px;
+    border-top-left-radius: var(--task-border-radius);
+    border-top-right-radius: var(--task-border-radius);
+}

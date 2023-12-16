@@ -1,0 +1,9 @@
+.navbar-board {
+    /* padding-block: 10px; */
+    padding-left: var(--gap);
+    display: flex;
+    align-items: center;
+    background-color: var(--navbar-board-bg-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}

@@ -1,0 +1,50 @@
+:root {
+    --board-bg-color: #0079bf;
+    --navbar-app-bg-color: #1D2125;
+    --navbar-board-bg-color: #ffffff3d;
+    --list-bg-color: #ebecf0;
+    --app-main-color: #eeebeb;
+    --gap: 10px;
+    --column-header-height: 45px;
+    --column-footer-height: 36px;
+    --column-border-radius: 5px;
+    --task-border-radius: 3px;
+
+    /* screen */
+    --screen-lg: 1200px;
+    --screen-md: 990px;
+    --screen-sm: 768px;
+    --screen-xs: 480px;
+    --screen-ip6-down: '(max-width: 375px)';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.3em;
+}
+
+.trello-master {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 48px 40px 1fr;
+    background: url('/public/assets/images/background.jpg') center center/cover;
+    color: var(--app-main-color)
+}
+
+.trello-master .customize-input-column{
+    background-color: inherit;
+    border:none;
+    cursor: pointer;
+}
+.trello-master .customize-input-column:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.icon {
+    font-size: 14px;
+    margin-right: 3px;
+}
